@@ -3,6 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    loadChildren: () =>
+      import('./pages/home/home.module').then((m) => m.HomeModule),
+  },
+  {
     path: 'aria',
     loadChildren: () =>
       import('./pages/ui-aria/ui-aria.module').then((m) => m.UiAriaModule),
@@ -15,8 +20,11 @@ const routes: Routes = [
   {
     path: 'primeng',
     loadChildren: () =>
-      import('./pages/ui-primeng/ui-primeng.module').then((m) => m.UiPrimengModule),
+      import('./pages/ui-primeng/ui-primeng.module').then(
+        (m) => m.UiPrimengModule
+      ),
   },
+
 ];
 
 @NgModule({
