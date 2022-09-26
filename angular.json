@@ -105,5 +105,7 @@
       }
     }
   },
-  "defaultProject": "accessible_frontend_database"
+  "cli": {
+    "analytics": "b48b3952-c103-4457-b50c-00d589d3b9ab"
+  }
 }

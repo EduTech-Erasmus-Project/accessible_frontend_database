@@ -1,2 +1,13 @@
-
-<router-outlet></router-outlet>
+<div class="page">
+  <app-header></app-header>
+  <app-menu></app-menu>
+  <div class="main">
+    <section aria-labelledby="id-page-title">
+      <h1 id="id-page-title" class="page_title">Mythical University</h1>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </section>
+  </div>
+  <app-footer></app-footer>
+</div>
