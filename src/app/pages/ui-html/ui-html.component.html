@@ -1,1 +1,9 @@
-<p>ui-html works!</p>
+<div>
+    <p-card header="Simple Card" [style]="{'width': '25rem', 'margin-bottom': '2em'}" tabindex="0">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="assets/img/boton.png">
+        </ng-template>
+        <p>Boton con la especificacion de ARIA Authoring Practices Guide.</p>
+        <p-button icon="pi pi-check" label="Boton" (click)="_route.navigate(['/aria/button'])"></p-button>
+    </p-card>
+</div>

@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { Button } from 'primeng/button';
+import { ButtonComponent } from './components/button/button.component';
 import { UiAriaComponent } from './ui-aria.component';
 
 const routes: Routes =
   [
     {
-      path: '', component: UiAriaComponent
-      , children: [
-        {
-          path: "button",
-          loadChildren: () =>
-            import("./components/button/button.component").then((m) => m.ButtonComponent),
-        },
-      ]
-    }
+      path: '', component: UiAriaComponent,
+    },
+    {
+      path: "button",
+      component: ButtonComponent
+    },
   ];
 
 @NgModule({

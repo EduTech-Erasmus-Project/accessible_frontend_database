@@ -739,4 +739,3 @@ window.addEventListener("load", function () {
     new MenubarNavigation(menubarNavs[i]);
   }
 });
-

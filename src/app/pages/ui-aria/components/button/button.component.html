@@ -1,2 +1,19 @@
-<h2>Ejemplo de boton usando las especificaciones de w3c</h2>
-<p>button works!</p>
+<h1>Ejemplo de boton usando las especificaciones de w3c</h1>
+
+<div class="card">
+    <p-splitter [style]="{'height': '300px'}" styleClass="mb-5">
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+             <p>  El boton, este es un ejemplo de como es el boton con aria-html</p>
+            </div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+                <H2>Codigo HTML</H2>
+                <p>
+                    {{textHtml}}
+                </p>
+            </div>
+        </ng-template>
+    </p-splitter>
+</div>

@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
+import {SplitterModule} from 'primeng/splitter';
 @NgModule({
   declarations: [
     MenuComponent,
@@ -16,14 +17,16 @@ import {ButtonModule} from 'primeng/button';
     CommonModule,
     RouterModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    SplitterModule
   ],
   exports: [
     MenuComponent,
     FooterComponent,
     HeaderComponent,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    SplitterModule
   ]
 })
 export class SharedModule { }
