@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { UiAriaRoutingModule } from './ui-aria-routing.module';
 import { UiAriaComponent } from './ui-aria.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { UiAriaComponent } from './ui-aria.component';
   ],
   imports: [
     CommonModule,
-    UiAriaRoutingModule
+    UiAriaRoutingModule,
+    SharedModule
   ]
 })
 export class UiAriaModule { }
