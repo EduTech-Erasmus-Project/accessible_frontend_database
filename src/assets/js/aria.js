@@ -59,7 +59,7 @@ class MenubarNavigation {
     domNode.querySelector("[role=menuitem]").tabIndex = 0;
 
     // Initial content for page
-    console.log("location.href", location.href);
+    //console.log("location.href", location.href);
 
     if (location.href.split("#/").length > 1) {
       linkURL = location.href;
