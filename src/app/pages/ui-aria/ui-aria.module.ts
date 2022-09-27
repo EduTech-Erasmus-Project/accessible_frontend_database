@@ -5,6 +5,7 @@ import { UiAriaComponent } from './ui-aria.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ButtonModule } from 'primeng/button';
 import { ButtonComponent } from './components/button/button.component';
+import { ComponentsModule } from './components/components.module';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ButtonComponent } from './components/button/button.component';
     CommonModule,
     UiAriaRoutingModule,
     SharedModule,
+    ComponentsModule
   ]
 })
 export class UiAriaModule { }
