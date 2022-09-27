@@ -10,10 +10,7 @@ const routes: Routes = [
     component: UiAriaComponent,
   },
   { path: 'accordion', component: AccordionComponent },
-  {
-    path: "button",
-    component: ButtonComponent
-  },
+  { path: 'button', component: ButtonComponent },
 ];
 
 @NgModule({
