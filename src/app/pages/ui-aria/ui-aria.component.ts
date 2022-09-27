@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class UiAriaComponent implements OnInit {
 
   constructor(
-    public _route:Router
   ) { }
 
   ngOnInit(): void {
