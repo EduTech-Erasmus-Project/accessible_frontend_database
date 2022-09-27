@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AccordionComponent } from './accordion/accordion.component';
+import { ButtonComponent } from './button/button.component';
 
 
 
 @NgModule({
   declarations: [
-    AccordionComponent
+    AccordionComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule
