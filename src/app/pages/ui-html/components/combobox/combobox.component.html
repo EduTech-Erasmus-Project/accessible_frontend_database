@@ -1,0 +1,89 @@
+<h1>Lista desplegable</h1>
+<h3>select</h3>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="box">
+            <H2>Descripción</H2>
+            <p>
+                Representa un control que permite al usuario elegir una
+                opción de entre una lista de opciones o un
+                numero de opciones.
+                Las opciones contenidas en el menú son representadas
+                por elementos <code>{{option}}</code>, los mismos que pueden ser
+                agrupados por <code>{{optgroup}}</code>.
+            </p>
+            <p>
+                Etiqueta HTML :
+            </p>
+            <code>
+                &lt;select&gt;
+                <br>
+                &nbsp; &lt;option&gt;&lt;/option&gt;
+                <br>
+                &lt;/select&gt;
+            </code>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="box">
+            <H2>Codigo HTML</H2>
+            <label for="">Ejemplo 1:</label>
+            <br>
+            <code>
+                &lt;select name="select"&gt;
+                    <br>
+                    &nbsp; &lt;option value="value1"&gt;Cañar&lt;/option&gt;
+                    <br>
+                    &nbsp; &lt;option value="value2" &gt;Cuenca&lt;/option&gt;
+                    <br>
+                    &nbsp; &lt;option value="value3"&gt;Guayaquil&lt;/option&gt;
+                    <br>
+                 &lt;/select&gt;
+            </code>
+            <br>
+            <br>
+            <label for="provinciaI">Elige tu provincia favorita?</label>
+            <br>
+            <select id="provinciaI" name="select" style="width:50%">
+                <option value="value1">Cañar</option>
+                <option value="value2">Cuenca</option>
+                <option value="value3">Guayaquil</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Ejemplo 2:</label>
+            <br>
+            <code>
+                &lt;label for="provinciaI"&gt;Elige tu provincia favorita?&lt;/label&gt;
+            <br>
+            &lt;select id="provinciaI" name="select" style="width:50%"&gt;
+            <br>    
+            &lt;optgroup label="Sierra"&gt;        
+            <br>
+            &nbsp; &lt;option value="value1"&gt;Cañar&lt;/option&gt;
+            <br>
+            &nbsp; &lt;option value="value2"&gt;Cuenca&lt;/option&gt;
+            &lt;/optgroup&gt;
+            <br>
+            &lt;optgroup label="Costa"&gt;
+            <br>
+            &nbsp; &lt;option value="value3"&gt;Guayaquil&lt;/option&gt;
+            <br>
+            &lt;/optgroup&gt;
+            &lt;/select&gt;
+            </code>
+            <br>
+            <br>
+            <label for="provinciaI">Elige tu provincia favorita?</label>
+            <br>
+            <select id="provinciaI" name="select" style="width:50%">
+                <optgroup label="Sierra">
+                    <option value="value1">Cañar</option>
+                    <option value="value2">Cuenca</option>
+                </optgroup>
+                <optgroup label="Costa">
+                    <option value="value3">Guayaquil</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
