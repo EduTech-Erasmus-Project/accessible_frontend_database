@@ -4,8 +4,9 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
-
-
+import {CardModule} from 'primeng/card';
+import {ButtonModule} from 'primeng/button';
+import {SplitterModule} from 'primeng/splitter';
 @NgModule({
   declarations: [
     MenuComponent,
@@ -14,12 +15,18 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    CardModule,
+    ButtonModule,
+    SplitterModule
   ],
   exports: [
     MenuComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardModule,
+    ButtonModule,
+    SplitterModule
   ]
 })
 export class SharedModule { }

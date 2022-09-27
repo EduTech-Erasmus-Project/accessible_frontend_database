@@ -14,7 +14,6 @@ import { ButtonComponent } from './button/button.component';
     CommonModule
   ],
   exports: [
-    AccordionComponent
   ]
 })
 export class ComponentsModule { }
