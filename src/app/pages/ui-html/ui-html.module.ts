@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { UiHtmlRoutingModule } from './ui-html-routing.module';
 import { UiHtmlComponent } from './ui-html.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { UiHtmlComponent } from './ui-html.component';
   ],
   imports: [
     CommonModule,
-    UiHtmlRoutingModule
+    UiHtmlRoutingModule,
+    SharedModule
   ]
 })
 export class UiHtmlModule { }
