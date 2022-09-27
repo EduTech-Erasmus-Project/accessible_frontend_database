@@ -7,6 +7,9 @@ import { RouterModule } from '@angular/router';
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 import {SplitterModule} from 'primeng/splitter';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     MenuComponent,
@@ -18,7 +21,10 @@ import {SplitterModule} from 'primeng/splitter';
     RouterModule,
     CardModule,
     ButtonModule,
-    SplitterModule
+    SplitterModule,
+    InputTextareaModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     MenuComponent,
@@ -26,7 +32,10 @@ import {SplitterModule} from 'primeng/splitter';
     HeaderComponent,
     CardModule,
     ButtonModule,
-    SplitterModule
+    SplitterModule,
+    InputTextareaModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

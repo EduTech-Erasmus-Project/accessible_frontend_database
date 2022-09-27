@@ -1,0 +1,26 @@
+:host ::ng-deep .p-card-body {
+    text-align: center;
+
+    .p-card-title {
+        font-weight: bold
+    }
+}
+
+:host ::ng-deep .p-card-e:focus {
+    padding: 3px 10px;
+    border: 5px solid rgb(0, 91, 156);
+    border-radius: 20px;
+}
+.p-card-e{
+    padding: 3px 10px;
+    border: #005a9c73 5px solid;
+    border-radius: 20px;
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    .p-card-e{
+        margin:10px;
+    }
+}
