@@ -33,7 +33,12 @@
               "node_modules/primeng/resources/primeng.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/aria.js",
+              "src/assets/js/button.js",
+              "src/assets/js/select-only.js",
+              "src/assets/js/calendar.js"
+            ]
           },
           "configurations": {
             "production": {
