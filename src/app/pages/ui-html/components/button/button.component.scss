@@ -1,0 +1,22 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-col{
+    width: 50%;
+    .col{
+        margin: 30px;
+    }
+    p{
+        text-align:justify;
+        
+    }
+}
+h3{
+    opacity: 0.8;
+}
+
+.code-sub{
+    background-color: #ccc;
+}

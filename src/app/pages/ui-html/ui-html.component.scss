@@ -1,0 +1,47 @@
+:host ::ng-deep .p-card-body {
+    text-align: center;
+
+    .p-card-title {
+        font-weight: bold
+    }
+}
+
+:host ::ng-deep .p-card-e:focus {
+    padding: 3px 10px;
+    border: 5px solid rgb(0, 91, 156);
+    border-radius: 10px;
+}
+
+/*:host ::ng-deep .p-card-e:hover {
+    padding: 3px 10px;
+    border: 5px solid rgb(0, 91, 156);
+    border-radius: 10px;
+}*/
+
+// .p-card-e{
+//     padding: 3px 10px;
+//     border: #005a9c73 5px solid;
+//     border-radius: 20px;
+// }
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    .p-card-e {
+        margin: 10px;
+    }
+}
+
+:host ::ng-deep .p-card-content{
+    padding:0px;
+}
+
+:host ::ng-deep .p-card-header{
+    text-align: center;
+    align-content: center;
+    img{
+        height:160px; 
+        width: auto;
+    }
+}
