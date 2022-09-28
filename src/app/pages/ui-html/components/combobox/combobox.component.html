@@ -4,7 +4,7 @@
     <div class="col-lg-6">
         <div class="box">
             <H2>Descripción</H2>
-            <p>
+            <p tabindex="0">
                 Representa un control que permite al usuario elegir una
                 opción de entre una lista de opciones o un
                 numero de opciones.
@@ -12,7 +12,7 @@
                 por elementos <code>{{option}}</code>, los mismos que pueden ser
                 agrupados por <code>{{optgroup}}</code>.
             </p>
-            <p>
+            <p tabindex="0">
                 Etiqueta HTML :
             </p>
             <code>
@@ -22,6 +22,11 @@
                 <br>
                 &lt;/select&gt;
             </code>
+            <p tabindex="0">
+                Podemos mejorar la accesibilidad de una lista aún más, podemos añadir código <code>{{optgroup}}</code>,
+                a la lista de opciones. En casos donde el código <code>optgroup</code> no sea compatible,
+                es simplemente ignorado y no puede causar ningún problema de accesibilidad. 
+            </p>
         </div>
     </div>
     <div class="col-lg-6">
@@ -29,7 +34,7 @@
             <H2>Codigo HTML</H2>
             <label for="">Ejemplo 1:</label>
             <br>
-            <code>
+            <code class="code-sub">
                 &lt;select name="select"&gt;
                     <br>
                     &nbsp; &lt;option value="value1"&gt;Cañar&lt;/option&gt;
@@ -53,7 +58,7 @@
             <br>
             <label for="">Ejemplo 2:</label>
             <br>
-            <code>
+            <code class="code-sub">
                 &lt;label for="provinciaI"&gt;Elige tu provincia favorita?&lt;/label&gt;
             <br>
             &lt;select id="provinciaI" name="select" style="width:50%"&gt;

@@ -1,17 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AcordionComponent } from './components/acordion/acordion.component';
 import { ButtonComponent } from './components/button/button.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
 import { ComboboxComponent } from './components/combobox/combobox.component';
 import { UiHtmlComponent } from './ui-html.component';
 
-const routes: Routes = [{ path: '', component: UiHtmlComponent },
-{
-path: 'button',
-component:ButtonComponent
-},
-{
-  path: 'combobox',
-  component:ComboboxComponent
+const routes: Routes = [
+  {
+    path: '',
+    component: UiHtmlComponent
+  },
+  {
+    path: 'button',
+    component: ButtonComponent
+  },
+  {
+    path: 'combobox',
+    component: ComboboxComponent
+  },
+  {
+    path: 'acordion',
+    component: AcordionComponent
+  },
+  {
+    path: 'calendar',
+    component: CalendarComponent
   }
 ];
 
