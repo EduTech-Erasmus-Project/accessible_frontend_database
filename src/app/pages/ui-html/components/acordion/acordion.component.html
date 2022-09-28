@@ -1,0 +1,81 @@
+<h1>Acordeón</h1>
+<h3>accordion</h3>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="box">
+            <H2>Descripción</H2>
+            <p tabindex="0">
+                Los acordeones son utiles cuando se desea realizar una alternacion entre mostrar y ocultar un cantidad
+                de contenido.
+            </p>
+            <p tabindex="0">
+                Los acordeones en <code>HTML</code> son bloques de contenido ya que nos brindan la funcionalidad de desplegarse o
+                replregarse de manera gradual.
+            </p>
+            <p tabindex="0">
+                Hay variaciones dentro de su funcionalidad:
+            </p>
+            <br>
+            <ul>
+                <li tabindex="0">
+                    La mayoria de veces hay como un maximo un bloque desplegado.
+                </li>
+                <li tabindex="0">
+                    Todos los bloques pueden estar desplegados.
+                </li>
+                <li tabindex="0">
+                    Todos los bloques puedenestar plegados.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="box">
+            <H2>Codigo HTML</H2>
+            <label for="">Ejemplo 1:</label>
+            <br>
+            <code class="code-sub">
+                &lt;div class="accordion"&gt;
+                <br>
+                    &nbsp; &lt;input type="radio" name="toggle" class="accordion-toggle" checked /&gt;
+                    <br>
+                    &nbsp; &lt;div class="accordion-header"&gt;Bloque 1&lt;/div&gt;
+                    <br>
+                    &nbsp; &lt;div class="accordion-content"&gt;Contenido Bloque 1&lt;/div&gt;
+                    <br>
+                    &nbsp;  &lt;input type="radio" name="toggle" class="accordion-toggle" /&gt;
+                    <br>
+                    &nbsp; &lt;div class="accordion-header"&gt;Bloque 2&lt;/div&gt;
+                    <br>
+                    &nbsp; &lt;div class="accordion-content"&gt;Contenido Bloque 2&lt;/div&gt;
+                    <br>
+                    &nbsp; &lt;input type="radio" name="toggle" class="accordion-toggle" /&gt;
+                    <br>
+                    &nbsp; &lt;div class="accordion-header"&gt;Bloque 3&lt;/div&gt;
+                    <br>
+                    &nbsp; &lt;div class="accordion-content"&gt;Contenido Bloque 3&lt;/div&gt;
+                <br>
+                &lt;/div&gt;
+            </code>
+            <br>
+            <p>
+              Codigo: <a href="assets/css/acordion.css">CSS</a>
+            </p>
+            <br>
+            <div class="accordion">
+                <input type="radio" name="toggle" class="accordion-toggle" checked />
+                <div class="accordion-header">Bloque 1</div>
+                <div class="accordion-content">Contenido Bloque 1</div>
+
+                <input type="radio" name="toggle" class="accordion-toggle" />
+                <div class="accordion-header">Bloque 2</div>
+                <div class="accordion-content">Contenido Bloque 2</div>
+
+                <input type="radio" name="toggle" class="accordion-toggle" />
+                <div class="accordion-header">Bloque 3</div>
+                <div class="accordion-content">Contenido Bloque 3</div>
+            </div>
+
+        </div>
+    </div>
+</div>
