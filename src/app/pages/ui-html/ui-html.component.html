@@ -1,39 +1,59 @@
 <div class="container-card">
-    <div class="p-card-e" tabindex="0">
-        <p-card header="Botón" [style]="{'width': '20rem', 'margin-bottom': '2em', 'height': '100%'}" tabindex="0">
+    <div class="p-card-e" tabindex="0" (click)="_route.navigate(['/html/button'])" (keydown.Space)="_route.navigate(['/html/button'])">
+        <p-card header="Botón" [style]="{'width': '25rem', 'margin-bottom': '2em', 'height': '100%'}">
             <ng-template pTemplate="header">
-                <img alt="Card" src="assets/img/boton.png" alt="Imagen referente al componete botón">
+                <img alt="Card" src="assets/img/boton.png" alt="Imagen referente al componente botón">
             </ng-template>
             <p>Instruye un elemento cliqueable de tipo botón.</p>
             <p-button icon="pi pi-check" label="Clic ver botón" (click)="_route.navigate(['/html/button'])"></p-button>
         </p-card>
     </div>
-
-    <div class="p-card-e" tabindex="0">
-        <p-card header="Lista desplegable" [style]="{'width': '20rem', 'margin-bottom': '2em','height': '100%'}">
+    <div class="p-card-e" tabindex="0" (click)="_route.navigate(['/html/combobox'])" (keydown.Space)="_route.navigate(['/html/combobox'])">
+        <p-card header="Lista desplegable" [style]="{'width': '25rem', 'margin-bottom': '2em','height': '100%'}">
             <ng-template pTemplate="header">
-                <img alt="Card" src="assets/img/combobox.png" alt="Imagen referente al componete lista desplegable" >
+                <img alt="Card" src="assets/img/combobox.png" alt="Imagen referente al componente lista desplegable" >
             </ng-template>
             <p>Representa un menú con una lista de opiciones.</p>
             <p-button icon="pi pi-check" label="Clic ver lista desplegable" (click)="_route.navigate(['/html/combobox'])"></p-button>
         </p-card>
     </div>
-    <div class="p-card-e" tabindex="0">
-        <p-card header="Acordeón" [style]="{'width': '20rem', 'margin-bottom': '2em','height': '100%'}">
+    <div class="p-card-e" tabindex="0" (click)="_route.navigate(['/html/acordion'])" (keydown.Space)="_route.navigate(['/html/acordion'])">
+        <p-card header="Acordeón" [style]="{'width': '25rem', 'margin-bottom': '2em','height': '100%'}">
             <ng-template pTemplate="header">
-                <img alt="Card" src="assets/img/Acordion.png" alt="Imagen referente al componete acordeón" >
+                <img alt="Card" src="assets/img/Acordion.png" alt="Imagen referente al componente acordeón" >
             </ng-template>
             <p>Bloques de contenido que pueden desplegarse o replegarse.</p>
             <p-button icon="pi pi-check" label="Clic ver acordeón" (click)="_route.navigate(['/html/acordion'])"></p-button>
         </p-card>
     </div>
-    <div class="p-card-e" tabindex="0">
-        <p-card header="Calendario" [style]="{'width': '20rem', 'margin-bottom': '2em','height': '100%'}">
+    <div class="p-card-e" tabindex="0" (click)="_route.navigate(['/html/calendar'])" (keydown.Space)="_route.navigate(['/html/calendar'])">
+        <p-card header="Calendario" [style]="{'width': '25rem', 'margin-bottom': '2em','height': '100%'}">
             <ng-template pTemplate="header">
-                <img alt="Card" src="assets/img/calendario.png" alt="Imagen referente al componete calendario" >
+                <img alt="Card" src="assets/img/calendario.png" alt="Imagen referente al componente calendario" >
             </ng-template>
             <p>Bloques de contenido que pueden desplegarse o replegarse.</p>
             <p-button icon="pi pi-check" label="Clic ver calendario" (click)="_route.navigate(['/html/calendar'])"></p-button>
         </p-card>
     </div>
+
+    <div class="p-card-e" tabindex="0" (click)="_route.navigate(['/html/checkbox'])" (keydown.Space)="_route.navigate(['/html/checkbox'])">
+        <p-card header="Casillas de verificación" [style]="{'width': '25rem', 'margin-bottom': '2em','height': '100%'}">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/img/checkbox.png" alt="Imagen referente al componente checkbox" >
+            </ng-template>
+            <p>Cajas que se pueden marcar o no para verificar algo en un formulario.</p>
+            <p-button icon="pi pi-check" label="Clic ver checkbox" (click)="_route.navigate(['/html/checkbox'])"></p-button>
+        </p-card>
+    </div>
+
+    <div class="p-card-e" tabindex="0" (click)="_route.navigate(['/html/radiobutton'])" (keydown.Space)="_route.navigate(['/html/radiobutton'])">
+        <p-card header="Botón de radio" [style]="{'width': '25rem', 'margin-bottom': '2em','height': '100%'}">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/img/radiobutton.png" alt="Imagen referente al componente radiobutton" >
+            </ng-template>
+            <p>Solo puede ser seleccionado un botón de radio en un grupo al mismo tiempo.</p>
+            <p-button icon="pi pi-check" label="Clic ver botón de radio" (click)="_route.navigate(['/html/radiobutton'])"></p-button>
+        </p-card>
+    </div>
+
 </div>

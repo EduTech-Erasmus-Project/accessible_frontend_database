@@ -1,0 +1,24 @@
+.container-col{
+    text-align-last: center;
+    p{
+        margin: 1em 6em;
+    }
+    h2{
+        border-bottom:none;
+    }
+}
+
+:host ::ng-deep .box{
+    border:none;
+}
+
+
+.container-home{
+background: url('http://bestwebsiteaccessibility.com/wp-content/uploads/2021/10/Web-Accessibility.png') center center / cover no-repeat fixed;
+background-size: cover;
+}
+
+.box-none{
+    background-color: transparent !important;
+}
+
