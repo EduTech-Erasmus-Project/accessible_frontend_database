@@ -2,7 +2,7 @@
   <ul class="tiles" style="width: 100%">
 
     <li class="tile tile-accordion">
-      <a (click)="navigateTo('button')">
+      <a [routerLink]="[ 'button' ]">
         <h2 class="tile-name">
           <!-- <img src="/WAI/content-images/wai-aria-practices/img/accordion.svg" alt=""> -->
           <span>Boton</span>
@@ -14,7 +14,7 @@
       </div>
     </li>
     <li class="tile tile-accordion">
-      <a (click)="navigateTo('combobox')">
+      <a [routerLink]="[ 'combobox' ]">
         <h2 class="tile-name">
           <!-- <img src="/WAI/content-images/wai-aria-practices/img/accordion.svg" alt=""> -->
           <span>Select-Only Combobox</span>
@@ -25,7 +25,7 @@
         seleccionar un valor para el cuadro combinado de una colección de valores posibles.</div>
     </li>
     <li class="tile tile-accordion">
-      <a (click)="navigateTo('accordion')">
+      <a [routerLink]="[ 'accordion' ]">
         <h2 class="tile-name">
           <!-- <img src="/WAI/content-images/wai-aria-practices/img/accordion.svg" alt=""> -->
           <span>Accordion</span>
@@ -36,14 +36,40 @@
         de contenido o miniatura que representa una sección de contenido.</div>
     </li>
     <li class="tile tile-accordion">
-      <a (click)="navigateTo('calendar')">
+      <a [routerLink]="[ 'calendar' ]">
         <h2 class="tile-name">
           <!-- <img src="/WAI/content-images/wai-aria-practices/img/accordion.svg" alt=""> -->
           <span>Calendario</span>
         </h2>
       </a>
       <div class="tile-introduction">
-        Una fecha de entrada de fecha editable Combobox que abre un diálogo que contiene una cuadrícula y botones de calendario para navegar por mes y año.</div>
+        Una fecha de entrada de fecha editable Combobox que abre un diálogo que contiene una cuadrícula y botones de
+        calendario para navegar por mes y año.</div>
+    </li>
+
+
+    <li class="tile tile-accordion">
+      <a [routerLink]="[ 'checkbox' ]">
+        <h2 class="tile-name">
+          <!-- <img src="/WAI/content-images/wai-aria-practices/img/accordion.svg" alt=""> -->
+          <span>Checkbox</span>
+        </h2>
+      </a>
+      <div class="tile-introduction">
+        WAI-ARIA admite dos tipos de widgets de casilla de verificación: el estado dual permite al usuario alternar
+        entre dos opciones (marcado y no marcado) y el estado triple admite un tercer estado adicional conocido como
+        marcado parcialmente.</div>
+    </li>
+    <li class="tile tile-accordion">
+      <a [routerLink]="[ 'radio' ]">
+        <h2 class="tile-name">
+          <!-- <img src="/WAI/content-images/wai-aria-practices/img/accordion.svg" alt=""> -->
+          <span>Radio Button</span>
+        </h2>
+      </a>
+      <div class="tile-introduction">
+        Un grupo de opción es un conjunto de botones de casilla de verificación, conocidos como botones de opción, donde
+        no se puede marcar más de uno de los botones a la vez.</div>
     </li>
 
   </ul>

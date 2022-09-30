@@ -1,0 +1,65 @@
+<h1>Ejemplo de Checkbox en ARIA (APG)</h1>
+
+<div class="row">
+  <div class="col-lg-6">
+    <h2>Descripción</h2>
+    <p>WAI-ARIA admite dos tipos de widgets de casilla de verificación: el estado dual permite al usuario alternar entre
+      dos opciones (marcado y no marcado) y el estado triple admite un tercer estado adicional conocido como marcado
+      parcialmente.</p>
+    <h2>Ejeplo</h2>
+
+    <h3 id="id-group-label">Sandwich Condiments</h3>
+    <div role="group" aria-labelledby="id-group-label">
+      <ul #checkboxes class="checkboxes">
+        <li>
+          <div role="checkbox" aria-checked="false" tabindex="0">Lettuce</div>
+        </li>
+        <li>
+          <div role="checkbox" aria-checked="true" tabindex="0">Tomato</div>
+        </li>
+        <li>
+          <div role="checkbox" aria-checked="false" tabindex="0">Mustard</div>
+        </li>
+        <li>
+          <div role="checkbox" aria-checked="false" tabindex="0">Sprouts</div>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- <fieldset #checkboxmixed class="checkbox-mixed">
+      <legend>Sandwich Condiments</legend>
+      <div role="checkbox" class="group_checkbox" aria-checked="mixed" aria-controls="cond1 cond2 cond3 cond4"
+        tabindex="0">
+        All condiments
+      </div>
+      <ul class="checkboxes">
+        <li><label><input type="checkbox" id="cond1">Lettuce</label></li>
+        <li><label><input type="checkbox" id="cond2" checked="">Tomato</label></li>
+        <li><label><input type="checkbox" id="cond3">Mustard</label></li>
+        <li><label><input type="checkbox" id="cond4">Sprouts</label></li>
+      </ul>
+    </fieldset> -->
+
+  </div>
+
+  <div class="col-lg-6">
+    <h1>Codigo HTML</h1>
+    <pre>
+      <code>
+        {{html}}
+      </code>
+    </pre>
+    <h2>Codigo Fuente</h2>
+    <ul>
+      <li>CSS:<a href="https://www.w3.org/WAI/ARIA/apg/example-index/checkbox/css/checkbox.css"> checkbox.css</a>
+      </li>
+      <li>Javascript:<a href="https://www.w3.org/WAI/ARIA/apg/example-index/checkbox/js/checkbox.js">
+          checkbox.js</a></li>
+      <li>Documentación W3C:<a href="https://www.w3.org/WAI/ARIA/apg/example-index/checkbox/checkbox.html">
+          Documentación
+          ARIA</a></li>
+    </ul>
+
+  </div>
+</div>

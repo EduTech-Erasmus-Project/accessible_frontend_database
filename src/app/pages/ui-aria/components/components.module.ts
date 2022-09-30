@@ -4,6 +4,8 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ButtonComponent } from './button/button.component';
 import { ComboboxComponent } from './combobox/combobox.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { RadioComponent } from './radio/radio.component';
 
 
 
@@ -12,7 +14,9 @@ import { CalendarComponent } from './calendar/calendar.component';
     AccordionComponent,
     ButtonComponent,
     ComboboxComponent,
-    CalendarComponent
+    CalendarComponent,
+    CheckboxComponent,
+    RadioComponent
   ],
   imports: [
     CommonModule

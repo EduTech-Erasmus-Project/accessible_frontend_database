@@ -34,10 +34,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/aria.js",
-              "src/assets/js/button.js",
-              "src/assets/js/select-only.js",
-              "src/assets/js/calendar.js"
+              "src/assets/js/aria.js"
             ]
           },
           "configurations": {
