@@ -27,9 +27,9 @@
 .container-card {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
     .p-card-e {
-        margin: 10px;
+        margin: 20px;
     }
 }
 

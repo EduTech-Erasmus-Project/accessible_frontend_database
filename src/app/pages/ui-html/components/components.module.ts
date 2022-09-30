@@ -5,13 +5,17 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { ComboboxComponent } from './combobox/combobox.component';
 import { AcordionComponent } from './acordion/acordion.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { RadiobuttonComponent } from './radiobutton/radiobutton.component';
 
 
 @NgModule({
   declarations: [
     ComboboxComponent,
     AcordionComponent,
-    CalendarComponent
+    CalendarComponent,
+    CheckboxComponent,
+    RadiobuttonComponent
   ],
   imports: [
     CommonModule,
