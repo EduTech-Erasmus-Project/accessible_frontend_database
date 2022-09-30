@@ -1,0 +1,61 @@
+<h1>Ejemplo de Checkbox en ARIA (APG)</h1>
+
+<div class="row">
+  <div class="col-lg-6">
+    <h2>Descripción</h2>
+    <p>Un grupo de opción es un conjunto de botones de casilla de verificación, conocidos como botones de opción, donde
+      no se puede marcar más de uno de los botones a la vez.</p>
+    <h2>Ejeplo</h2>
+
+
+    <div role="radiogroup" aria-labelledby="group_label_1" id="rg1">
+      <h3 id="group_label_1">Pizza Crust</h3>
+
+      <div role="radio" aria-checked="false" tabindex="0">
+        Regular crust
+      </div>
+      <div role="radio" aria-checked="false" tabindex="-1">
+        Deep dish
+      </div>
+      <div role="radio" aria-checked="false" tabindex="-1">
+        Thin crust
+      </div>
+    </div>
+
+    <div role="radiogroup" aria-labelledby="group_label_2" id="rg2">
+      <h3 id="group_label_2">Pizza Delivery</h3>
+      <div role="radio" aria-checked="false" tabindex="0">
+        Pickup
+      </div>
+
+      <div role="radio" aria-checked="false" tabindex="-1">
+        Home Delivery
+      </div>
+
+      <div role="radio" aria-checked="false" tabindex="-1">
+        Dine in
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-lg-6">
+    <h1>Codigo HTML</h1>
+    <pre>
+      <code>
+        {{html}}
+      </code>
+    </pre>
+    <h2>Codigo Fuente</h2>
+    <ul>
+      <li>CSS:<a href="https://www.w3.org/WAI/ARIA/apg/example-index/radio/css/radio.css"> radio.css</a>
+      </li>
+      <li>Javascript:<a href="https://www.w3.org/WAI/ARIA/apg/example-index/radio/js/radio.js">
+          radio.js</a></li>
+      <li>Documentación W3C:<a href="https://www.w3.org/WAI/ARIA/apg/example-index/radio/radio.html">
+          Documentación
+          ARIA</a></li>
+    </ul>
+
+  </div>
+</div>
