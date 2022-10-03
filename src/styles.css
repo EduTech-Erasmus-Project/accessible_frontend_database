@@ -1069,3 +1069,8 @@ body.page-about main {
   padding-left: 4px;
   border-left: 4px solid #034575;
 }
+
+
+.fl-prefsEditor-buttons{
+  margin-right: 0% !important;
+}

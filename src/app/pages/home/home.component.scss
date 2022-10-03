@@ -27,6 +27,25 @@
     background-color: transparent !important;
 }
 
+.box-card{
+	align-content: center;
+	h1{
+		color:white;
+		
+	}
+	label{
+		color:white;
+	}
+	a{
+		color:white;
+		text-decoration:none;
+		font-style: italic;
+		font-family: 'Times New Roman', Times, serif;
+	}
+	i{
+		color:white;
+	}
+}
 /**************CSS PARA NEVAR*******************/
 @import url('https://fonts.googleapis.com/css?family=Corben:700');
 
@@ -92,3 +111,6 @@
 }
 
 /************************CARDS***************************/
+.box-e{
+	border: solid 1px var(--line-grey);
+}

@@ -3,15 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { UiPrimengRoutingModule } from './ui-primeng-routing.module';
 import { UiPrimengComponent } from './ui-primeng.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { ComponentsModule } from './components/components.module';
 
 
 @NgModule({
   declarations: [
-    UiPrimengComponent
+    UiPrimengComponent,
   ],
   imports: [
     CommonModule,
-    UiPrimengRoutingModule
+    ComponentsModule,
+    UiPrimengRoutingModule,
   ]
 })
 export class UiPrimengModule { }

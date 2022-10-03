@@ -1,0 +1,24 @@
+<h1>Ejemplo de Combobox en ARIA (APG)</h1>
+
+<div class="row">
+  <div class="col-lg-6">
+    <h2>Descripción</h2>
+    <p>Un cuadro combinado es un widget de entrada con una ventana emergente asociada que permite a los usuarios
+      seleccionar un valor para el cuadro combinado de una colección de valores posibles.</p>
+    <p tabindex="0">
+      Etiqueta HTML :
+    </p>
+    <code>
+    &lt;p-dropdown&gt;&lt;/p-dropdown&gt;
+  </code>
+  </div>
+
+  <div class="col-lg-6">
+    <h1>Codigo HTML</h1>
+    <code>
+      &lt;p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a City" optionLabel="name" [showClear]="true"&gt;&lt;/p-dropdown&gt;
+    </code>
+    <h2>Ejemplo</h2>
+    <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a City" optionLabel="name" [showClear]="true"></p-dropdown>
+  </div>
+</div>
