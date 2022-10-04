@@ -7,6 +7,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadioComponent } from './radio/radio.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     SharedModule,
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ComponentsModule { }

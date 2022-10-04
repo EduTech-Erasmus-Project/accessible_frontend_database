@@ -15,7 +15,7 @@ export class ComboboxComponent implements OnInit, AfterViewInit {
       {name: 'Rome', code: 'RM'},
       {name: 'London', code: 'LDN'},
       {name: 'Istanbul', code: 'IST'},
-      {name: 'Paris', code: 'PRS'}
+      {name: 'Paris', code: 'PRS'},
   ];
   }
   ngAfterViewInit(): void {
