@@ -1,0 +1,47 @@
+<h1>Ejemplo de Checkbox en ARIA (APG)</h1>
+
+<div class="row">
+  <div class="col-lg-6">
+    <h2>Descripción</h2>
+    <p>WAI-ARIA admite dos tipos de widgets de casilla de verificación: el estado dual permite al usuario alternar entre
+      dos opciones (marcado y no marcado) y el estado triple admite un tercer estado adicional conocido como marcado
+      parcialmente.</p>
+    <h2>Ejemplo</h2>
+    <code>
+      &lt;p-checkbox&gt;&lt;/p-checkbox&gt;
+    </code>
+  </div>
+
+  <div class="col-lg-6">
+    <h1>Codigo HTML</h1>
+    <code>
+    &lt;div class="field-checkbox"&gt;
+    <br> 
+    &nbsp; &lt;p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny"&gt;&lt;/p-checkbox&gt;
+    <br>  
+    &nbsp; &lt;label for="ny"&gt;Cuenca&lt;/label&gt;
+    <br>
+    &lt;/div&gt;
+    <br>
+    &lt;div class="field-checkbox"&gt;
+    <br>  
+    &nbsp; &lt;p-checkbox name="group1" value="San Francisco" [(ngModel)]="selectedCities" inputId="sf"&gt;&lt;/p-checkbox&gt;
+    <br>  
+    &nbsp; &lt;label for="sf"&gt;Zamora&lt;/label&gt;
+    <br>
+    &lt;/div&gt;
+  </code>
+  <br>
+  <br>
+  <div class="field-checkbox">
+      <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny"></p-checkbox>
+      <label for="ny">Cuenca</label>
+    </div>
+    <br>
+    <div class="field-checkbox">
+      <p-checkbox name="group1" value="San Francisco" [(ngModel)]="selectedCities" inputId="sf"></p-checkbox>
+      <label for="sf">Zamora</label>
+    </div>
+
+  </div>
+</div>

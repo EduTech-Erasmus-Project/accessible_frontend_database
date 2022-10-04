@@ -1,0 +1,68 @@
+<h1>Ejemplo de Accordion en ARIA (APG)</h1>
+
+<div class="row">
+  <div class="col-lg-6" tabindex="0">
+    <h2>Descripción</h2>
+    <p tabindex="0">Un acordeón es un conjunto de encabezados interactivos apilados verticalmente que contienen un
+      título, fragmento
+      de contenido o miniatura que representa una sección de contenido.</p>
+    <h2>Etiqueta HTML: </h2>
+    <code>
+    &lt;p-accordion&gt;&lt;/p-accordion&gt;
+  </code>
+  </div>
+
+  <div class="col-lg-6">
+    <h1>Codigo HTML</h1>
+    <br>
+    <br>
+    <code>
+      &lt;p-accordion&gt;
+      <br>
+        &lt;p-accordionTab header="Encabezado 1"&gt;
+        <br>
+        Contenido 1
+        <br>
+        &lt;/p-accordionTab&gt;
+        <br>
+        &lt;p-accordionTab header="Encabezado 2"&gt;
+        <br> 
+        Contenido 2
+        <br>
+        &lt;/p-accordionTab&gt;
+        <br>
+        &lt;p-accordionTab header="Encabezado 3"&gt;
+        <br> 
+        Contenido 3    
+        <br>
+        &lt;/p-accordionTab&gt;
+    <br>
+        &lt;/p-accordion&gt;
+    </code>
+    <h2>Ejemplo:</h2>
+    <p-accordion>
+      <p-accordionTab header="Encabezado 1">
+        <p>Contenido 1</p>
+      </p-accordionTab>
+      <p-accordionTab header="Encabezado 2">
+        <p>Contenido 2</p>
+      </p-accordionTab>
+      <p-accordionTab header="Encabezado 3">
+        <p>Contenido 3</p>
+      </p-accordionTab>
+    </p-accordion>
+    <h2>Ejemplo 2:</h2>
+    <h3>Con el contenido focable</h3>
+    <p-accordion>
+      <p-accordionTab header="Encabezado 1">
+        <p tabindex="0">Contenido 1</p>
+      </p-accordionTab>
+      <p-accordionTab header="Encabezado 2">
+        <p tabindex="0">Contenido 2</p>
+      </p-accordionTab>
+      <p-accordionTab header="Encabezado 3">
+        <p tabindex="0">Contenido 3</p>
+      </p-accordionTab>
+    </p-accordion>
+  </div>
+</div>

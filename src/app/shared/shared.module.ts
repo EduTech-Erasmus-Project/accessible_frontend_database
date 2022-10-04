@@ -10,6 +10,11 @@ import {SplitterModule} from 'primeng/splitter';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import {DropdownModule} from 'primeng/dropdown';
+import {AccordionModule} from 'primeng/accordion';
+import {CalendarModule} from 'primeng/calendar';
+import {CheckboxModule} from 'primeng/checkbox';
+import {RadioButtonModule} from 'primeng/radiobutton';
 @NgModule({
   declarations: [
     MenuComponent,
@@ -24,7 +29,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     SplitterModule,
     InputTextareaModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DropdownModule,
+    AccordionModule,
+    CalendarModule,
+    CheckboxModule,
+    RadioButtonModule
   ],
   exports: [
     MenuComponent,
@@ -35,7 +45,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     SplitterModule,
     InputTextareaModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DropdownModule,
+    AccordionModule,
+    CalendarModule,
+    CheckboxModule,
+    RadioButtonModule
   ]
 })
 export class SharedModule { }

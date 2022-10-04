@@ -1,0 +1,56 @@
+<h1>Ejemplo de Checkbox en ARIA (APG)</h1>
+
+<div class="row">
+  <div class="col-lg-6">
+    <h2>Descripción</h2>
+    <p>Un grupo de opción es un conjunto de botones de casilla de verificación, conocidos como botones de opción, donde
+      no se puede marcar más de uno de los botones a la vez.</p>
+    <h2>Ejemplo</h2>
+    <code>
+      &lt;p-radioButton&gt;&lt;/p-radioButton&gt;
+    </code>
+  </div>
+
+  <div class="col-lg-6">
+    <h1>Codigo HTML</h1>
+    <code>
+      &lt;div class="field-radiobutton"&gt;
+      <br>
+        &nbsp; &lt;p-radioButton name="city" value="Cuenca" [(ngModel)]="city" inputId="city1"&gt;&lt;/p-radioButton&gt;
+        <br>
+        &nbsp; &lt;label for="city1"&gt;Cuenca&lt;/label&gt;
+        <br>
+      &lt;/div&gt;
+      <br>
+      &lt;div class="field-radiobutton"&gt;
+      <br>
+        &nbsp; &lt;p-radioButton name="city" value="Azogue" [(ngModel)]="city" inputId="city2"&gt;&lt;/p-radioButton&gt;
+        <br>
+        &nbsp; &lt;label for="city2"&gt;Azogues&lt;/label&gt;br
+        <br>
+      &lt;/div&gt;
+      <br>
+      &lt;div class="field-radiobutton"&gt;
+      <br>
+        &nbsp; &lt;p-radioButton name="city" value="Loja" [(ngModel)]="city" inputId="city3"&gt;&lt;/p-radioButton&gt;
+        <br>
+        &nbsp; &lt;label for="city3"&gt;Loja&lt;/label&gt;
+        <br>
+      &lt;/div&gt;
+    </code>
+    <br>
+    <br>
+    <div class="field-radiobutton">
+      <p-radioButton name="city" value="Cuenca" [(ngModel)]="city" inputId="city1"></p-radioButton>
+      <label for="city1">Cuenca</label>
+    </div>
+    <div class="field-radiobutton">
+      <p-radioButton name="city" value="Azogue" [(ngModel)]="city" inputId="city2"></p-radioButton>
+      <label for="city2">Azogues</label>
+    </div>
+    <div class="field-radiobutton">
+      <p-radioButton name="city" value="Loja" [(ngModel)]="city" inputId="city3"></p-radioButton>
+      <label for="city3">Loja</label>
+    </div>
+  </div>
+</div>
