@@ -31,10 +31,12 @@
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/codemirror/codemirror.min.css"
             ],
             "scripts": [
-              "src/assets/js/aria.js"
+              "src/assets/js/aria.js",
+              "src/assets/codemirror/codemirror.min.js"
             ]
           },
           "configurations": {
