@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { MessageService } from 'primeng/api';
 import * as CodeMirror from "../../../assets/codemirror/codemirror.min.js";
 @Component({
   selector: 'app-fluit',
@@ -6,7 +7,7 @@ import * as CodeMirror from "../../../assets/codemirror/codemirror.min.js";
   styleUrls: ['./fluit.component.scss']
 })
 export class FluitComponent implements OnInit, AfterViewInit {
-  
+
   @ViewChild('myedit') mirror?: ElementRef;
   @ViewChild('myeditdepen') mirrorDepen?: ElementRef;
   @ViewChild('myeditscript') mirrorScript?: ElementRef;
@@ -45,7 +46,7 @@ export class FluitComponent implements OnInit, AfterViewInit {
 <!-- The Infusion Library -->
 <script type="text/javascript" src="lib/infusion/infusion-custom.js"></script>`
 
-public script=`
+  public script = `
 <body>
     <script type="text/javascript">
     $(document).ready(function () {
@@ -65,29 +66,67 @@ public script=`
 </body>
 `;
 
-ngAfterViewInit(): void {
-  CodeMirror(this.mirror?.nativeElement, {
-    lineNumbers: true,
-    tabSize: 2,
-    value: this.paneldes,
-  });
+  constructor(private messageService: MessageService) {
+
+  }
+
+  ngAfterViewInit(): void {
+    CodeMirror(this.mirror?.nativeElement, {
+      lineNumbers: true,
+      tabSize: 2,
+      value: this.paneldes,
+    });
 
 
-  CodeMirror(this.mirrorDepen?.nativeElement, {
-    lineNumbers: true,
-    tabSize: 2,
-    value: this.dependences,
-  });
+    CodeMirror(this.mirrorDepen?.nativeElement, {
+      lineNumbers: true,
+      tabSize: 2,
+      value: this.dependences,
+    });
 
-  CodeMirror(this.mirrorScript?.nativeElement, {
-    lineNumbers: true,
-    tabSize: 2,
-    value: this.script,
-  });
-}
+    CodeMirror(this.mirrorScript?.nativeElement, {
+      lineNumbers: true,
+      tabSize: 2,
+      value: this.script,
+    });
+  }
 
 
   ngOnInit(): void {
+
+  }
+
+  copyText(identify: string) {
+    //this.messageService.clear();
+    let text_copy: any;
+    switch (identify) {
+      case 'panel':
+        text_copy = this.paneldes;
+        break;
+      case 'dependences':
+        text_copy = this.dependences;
+        break;
+      case 'script':
+        text_copy = this.script
+        break;
+    }
+    navigator.clipboard.writeText(text_copy).then(
+      () => {
+        this.messageService.add({
+          severity: "success",
+          summary: "Copiado",
+          detail: "Contenido copiado en el portapales",
+        });
+      },
+      (err) => {
+        //console.error("Async: Could not copy text: ", err);
+        this.messageService.add({
+          severity: "error",
+          summary: "Error",
+          detail: "Intenta de nuevo",
+        });
+      }
+    );
   }
 }
 
