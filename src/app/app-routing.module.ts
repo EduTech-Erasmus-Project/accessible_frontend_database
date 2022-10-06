@@ -24,11 +24,17 @@ const routes: Routes = [
         (m) => m.UiPrimengModule
       ),
   },
-
+  { 
+    path: 'fluit', 
+    loadChildren: () => 
+    import('./pages/fluit/fluit.module').then(
+      (m) => m.FluitModule
+      ), 
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

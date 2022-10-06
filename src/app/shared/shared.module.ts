@@ -15,6 +15,8 @@ import {AccordionModule} from 'primeng/accordion';
 import {CalendarModule} from 'primeng/calendar';
 import {CheckboxModule} from 'primeng/checkbox';
 import {RadioButtonModule} from 'primeng/radiobutton';
+import {ToastModule} from 'primeng/toast';
+
 @NgModule({
   declarations: [
     MenuComponent,
@@ -34,7 +36,8 @@ import {RadioButtonModule} from 'primeng/radiobutton';
     AccordionModule,
     CalendarModule,
     CheckboxModule,
-    RadioButtonModule
+    RadioButtonModule,
+    ToastModule
   ],
   exports: [
     MenuComponent,
@@ -50,7 +53,8 @@ import {RadioButtonModule} from 'primeng/radiobutton';
     AccordionModule,
     CalendarModule,
     CheckboxModule,
-    RadioButtonModule
+    RadioButtonModule,
+    ToastModule
   ]
 })
 export class SharedModule { }
